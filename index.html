@@ -7,78 +7,85 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Les Commande Git & GitHub</h1>
-    <ol>
-      <li>
-        la commande “pwd” indique si vous êtes bien dans le bon fichier
-        Premierprojet
-      </li>
-      <li>
-        Dubois Cédric@DUBOIS-CEDRIC MINGW64 ~/OneDrive/Bureau/Premierprojet
-        (master)
-      </li>
-      <li>$ touch index.html style.css</li>
-      <li>$ git status</li>
-      <li>$ git add index.html style.css ou $ git add . ou $ git add *</li>
-      <li>$ git status</li>
-      <li>$ git commit -m "Ajout de l'index.html et style.css"</li>
-      <li>$ git log</li>
-      <li>$ clear pour nettoyer le terminal</li>
-      <li>Travaille sur vos fichiers index et style</li>
-      <li>$ git add index.html style.css</li>
-    </ol>
+    <section>
+      <main>
+        <h1>Les Commandes Git & GitHub</h1>
+        <h2>Les commandes Git de bases</h2>
+        <ol>
+          <li>
+            la commande “pwd” indique si vous êtes bien dans le bon fichier
+            Premierprojet
+          </li>
+          <li>
+            Dubois Cédric@DUBOIS-CEDRIC MINGW64 ~/OneDrive/Bureau/Premierprojet
+            (master)
+          </li>
+          <li>$ touch index.html style.css</li>
+          <li>$ git status</li>
+          <li>$ git add index.html style.css ou $ git add . ou $ git add *</li>
+          <li>$ git status</li>
+          <li>$ git commit -m "Ajout de l'index.html et style.css"</li>
+          <li>$ git log</li>
+          <li>$ clear pour nettoyer le terminal</li>
+          <li>Travaille sur vos fichiers index et style</li>
+          <li>$ git add index.html style.css</li>
+        </ol>
 
-    <p>
-      Envoyez votre commit sur le dépôt distant avec la commande git push Créer
-      une version de votre projet, c’est super, mais il faut désormais passer
-      votre commit du repository à votre dépôt distant. On dit qu’il faut
-      “pusher” votre commit.
-    </p>
+        <p>
+          Envoyez votre commit sur le dépôt distant avec la commande git push
+          Créer une version de votre projet, c’est super, mais il faut désormais
+          passer votre commit du repository à votre dépôt distant. On dit qu’il
+          faut “pusher” votre commit.
+        </p>
 
-    <h2>Dépot sur GitHub</h2>
+        <h2>Dépot sur GitHub</h2>
 
-    <ol>
-      <li>
-        $ git remote add origin
-        https://github.com/DuboisCedric/OpenclassroomsProject.git
-      </li>
-      <li>$ git branch -M main</li>
-      <li>$ git push -u origin main</li>
-    </ol>
+        <ol>
+          <li>
+            $ git remote add origin
+            https://github.com/DuboisCedric/OpenclassroomsProject.git
+          </li>
+          <li>$ git branch -M main</li>
+          <li>$ git push -u origin main</li>
+        </ol>
 
-    <p>Bravo, la version du projet est maintenant stockée dans le cloud !</p>
-    <p>
-      Pour créer une version du projet avec le fichier HTML à jour et l’envoyer
-      sur le dépôt distant GitHub, vous allez :
-    </p>
+        <p>
+          Bravo, la version du projet est maintenant stockée dans le cloud !
+        </p>
+        <p>
+          Pour créer une version du projet avec le fichier HTML à jour et
+          l’envoyer sur le dépôt distant GitHub, vous allez :
+        </p>
 
-    <ul>
-      <li>$ git add index.html</li>
-    </ul>
+        <ul>
+          <li>$ git add index.html</li>
+        </ul>
 
-    <p>Créer une nouvelle version grâce à la commande :</p>
-    <ul>
-      <li>$ git commit -m "Modification du titre H1"</li>
-    </ul>
+        <p>Créer une nouvelle version grâce à la commande :</p>
+        <ul>
+          <li>$ git commit -m "Modification du titre H1"</li>
+        </ul>
 
-    <p>
-      Envoyer la nouvelle version sur le dépôt distant grâce à la commande :
-    </p>
+        <p>
+          Envoyer la nouvelle version sur le dépôt distant grâce à la commande :
+        </p>
 
-    <ul>
-      <li>$ git push origin main</li>
-    </ul>
+        <ul>
+          <li>$ git push origin main</li>
+        </ul>
 
-    <h3>En résumé</h3>
-    <p>
-      git add permet d’ajouter des fichiers dans l’index, qui est une zone
-      intermédiaire dans laquelle stocker les fichiers modifiés.
-      <span>$ git commit</span> permet de créer une nouvelle version avec les
-      fichiers situés dans l’index.
-      <span>$ git commit -m "message"</span> permet de créer une nouvelle
-      version et de préciser le message rattaché au commit.
-      <span>$ git push</span> permet d’envoyer les modifications faites en local
-      vers un dépôt distant.
-    </p>
+        <h3>En résumé :</h3>
+        <p>
+          <span>$ git add</span> permet d’ajouter des fichiers dans l’index, qui
+          est une zone intermédiaire dans laquelle stocker les fichiers
+          modifiés. <span>$ git commit</span> permet de créer une nouvelle
+          version avec les fichiers situés dans l’index.
+          <span>$ git commit -m "message"</span> permet de créer une nouvelle
+          version et de préciser le message rattaché au commit.
+          <span>$ git push</span> permet d’envoyer les modifications faites en
+          local vers un dépôt distant.
+        </p>
+      </main>
+    </section>
   </body>
 </html>
