@@ -85,6 +85,115 @@
           <span>$ git push</span> permet d’envoyer les modifications faites en
           local vers un dépôt distant.
         </p>
+
+        <h2>Appréhendez le système de branches</h2>
+        <ul>
+          <li>
+            Pour connaître les branches présentes dans notre projet, il faut
+            taper la ligne de commande : <span>$ git branch</span>
+          </li>
+          <li>Dans un premier temps, vous n’aurez que :</li>
+          <li>git branch * main</li>
+          <li>
+            Cette commande va créer la branche Cagnotte en local. Cette dernière
+            ne sera pas dupliquée sur le dépôt distant
+            <span>$ git branch [nom de votre nouvelle branche]</span>
+          </li>
+          <li>Exemple : <span>$ git branch cagnotte</span></li>
+          <li><span>$ git branch</span></li>
+          <li>
+            Basculer sur la branche cagnotte nous allons utiliser :
+            <span>$ git checkout cagnotte</span>
+          </li>
+          <li>Vous aurez donc l'étoile * sur la branche * cagnotte :</li>
+        </ul>
+
+        <p>
+          La branche va fonctionner comme un dossier virtuel. Avec git checkout,
+          on va être téléporté dans le dossier virtuel Cagnotte. On reste dans
+          le dossier OC physiquement, mais virtuellement nous sommes passés dans
+          un monde parallèle ! Vous pouvez désormais réaliser votre évolution
+          sans toucher à la branche main qui abrite votre code principal
+          fonctionnel. Vous pouvez re-basculer si besoin à tout moment sur la
+          branche main, sans impacter les modifications de la branche Cagnotte.
+        </p>
+        <br />
+        <ul>
+          <li>
+            Vous pouvez créer un fichier dans la branche cagnotte
+            <span>$ git touch cagnotte.txt</span>
+          </li>
+          <li>Indexer le fichier avec <span>$ git add cagnotte.txt</span></li>
+          <li>
+            Puis créer le commit
+            <span
+              >$ git commit -m “Réalisation de la partie cagnotte côté front
+              end”</span
+            >
+          </li>
+        </ul>
+        <p>
+          Vos modifications sont maintenant enregistrées avec la description
+          “Réalisation de la partie cagnotte côté front end”. Félicitations !
+          Vous venez d’être couronné roi du commit ! 🥇"
+        </p>
+        <br />
+        <p>
+          Avec la commande git commit, nous avons enregistré des modifications
+          en local, uniquement. Il ne vous reste plus qu’à envoyer les
+          modifications réalisées sur le dépôt distant grâce à la commande git
+          push que nous avons pu voir
+        </p>
+        <ul>
+          <li>
+            Voyons maintenant comment l'envoyer sur le dépôt distant GitHub
+            <span>$ git push -u origin cagnotte </span>
+          </li>
+        </ul>
+        <h2>Fusionnez votre travail avec la commande git merge</h2>
+        <p>
+          Voilà plusieurs jours que vous travaillez sur l'évolution "cagnotte"
+          de l'application. Après de nombreux commits et pushs, le travail
+          semble terminé. Vous effectuez donc une série de tests pour vérifier
+          le bon fonctionnement de l'évolution “cagnotte”, et bravo à vous, tout
+          est fonctionnel ! À présent, il faut intégrer l'évolution réalisée
+          dans la branche "cagnotte" à la branche principale "main". Pour cela,
+          vous devez utiliser la commande "git merge".
+        </p>
+        <br />
+        <p>
+          Cette commande doit s'utiliser à partir de la branche dans laquelle
+          nous voulons apporter les évolutions. Dans notre cas, la commande
+          s’effectuera donc dans la branche main. Pour y retourner, utilisez la
+          commande :
+        </p>
+        <ul>
+          <li>
+            Revenir sur la branche 'main' <span>$ git checkout main</span>
+          </li>
+          <li>
+            Vérifier que vous êtes bien sur la branche main
+            <span>$ git branch</span>
+          </li>
+          <li>
+            Maintenant que vous êtes dans votre branche principale, vous pouvez
+            fusionner votre branche "cagnotte" à celle-ci grâce à la commande
+            suivante : <span>$ git merge cagnotte</span>
+          </li>
+        </ul>
+        <h3>En Résumé</h3>
+        <ul>
+          <li>
+            Une branche est une “copie” d’un projet sur laquelle on opère des
+            modifications de code.
+          </li>
+          <li>
+            La branche main (ou anciennement master) est la branche principale
+            d’un projet
+          </li>
+          <li>git checkout permet de basculer d’une branche à une autre.</li>
+          <li>git merge permet de fusionner deux branches.</li>
+        </ul>
       </main>
     </section>
   </body>
